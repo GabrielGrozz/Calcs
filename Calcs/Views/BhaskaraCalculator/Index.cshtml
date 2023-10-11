@@ -1,0 +1,41 @@
+﻿@model Calcs.Models.CalculateBhaskaraViewModel
+
+@{
+    ViewData["Title"] = "Bhaskara Calculator";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<hr />
+<div class="row">
+    <form asp-action="Index" method="post">
+        <label asp-for="ValueA"></label>
+        <input asp-for="ValueA" />
+
+        <label asp-for="ValueB"></label>
+        <input asp-for="ValueB" />
+
+        <label asp-for="ValueC"></label>
+        <input asp-for="ValueC" />
+
+        <input type="submit" value="Calcular" />
+    </form>
+    <td>@Html.DisplayNameFor(model => model.X1) </td>
+    <td>@Html.DisplayTextFor(model => model.X1) </td>
+    <br />
+    <td>@Html.DisplayNameFor(model => model.X2) </td>
+    <td>@Html.DisplayTextFor(model => model.X2) </td>
+</div>
+
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

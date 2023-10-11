@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Usuário\source\repos\Calcs\Calcs\Calcs
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Usuário/source/repos/Calcs/Calcs/Calcs/Views/BhaskaraCalculator/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmhhc2thcmFDYWxjdWxhdG9yXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuário/source/repos/Calcs/Calcs/Calcs/Views/Calculator/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsY3VsYXRvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Usuário/source/repos/Calcs/Calcs/Calcs/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
