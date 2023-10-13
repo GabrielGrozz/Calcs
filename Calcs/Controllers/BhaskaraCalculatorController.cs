@@ -15,8 +15,13 @@ namespace Calcs.Controllers
         {
             double delta = Math.Pow(data.ValueB, 2) - (4 * data.ValueA * data.ValueC);
 
-            data.X1 = -data.ValueB + Math.Sqrt(delta) / (2 * data.ValueA);
-            data.X2 = -data.ValueB - Math.Sqrt(delta) / (2 * data.ValueA);
+            if(delta < 0)
+            {
+                ViewBag.DeltaZero = "O valor de delta é negativo. A equação nã possui raízes reias";
+            }
+
+            data.X1 = (-data.ValueB + Math.Sqrt(delta)) / (2 * data.ValueA);
+            data.X2 = (-data.ValueB - Math.Sqrt(delta)) / (2 * data.ValueA);
 
             return View(data);
         }

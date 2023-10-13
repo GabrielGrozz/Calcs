@@ -19,13 +19,17 @@
         <input asp-for="ValueC" />
 
         <input type="submit" value="Calcular" />
+        <span asp-validation-for="ValueA" class="text-danger"></span>
     </form>
-    <td>@Html.DisplayNameFor(model => model.X1) </td>
-    <td>@Html.DisplayTextFor(model => model.X1) </td>
-    <br />
-    <td>@Html.DisplayNameFor(model => model.X2) </td>
-    <td>@Html.DisplayTextFor(model => model.X2) </td>
+
+    <span>@ViewBag.DeltaZero </span>
 </div>
+
+<td>@Html.DisplayNameFor(model => model.X1) </td>
+<td>@Html.DisplayTextFor(model => model.X1) </td>
+<br />
+<td>@Html.DisplayNameFor(model => model.X2) </td>
+<td>@Html.DisplayTextFor(model => model.X2) </td>
 
 
 

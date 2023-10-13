@@ -6,6 +6,7 @@ namespace Calcs.Models
     public class CalculateBhaskaraViewModel
     {
         [Display(Name ="Valor A")]
+        [Required(ErrorMessage ="O campo do valor A precisa ser preenchido")]
         public double ValueA { get; set; }
         [Display(Name = "Valor B")]
         public double ValueB { get; set; }
